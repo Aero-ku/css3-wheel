@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+main{
+    position:relative;
+    height:500px;
+    width:500px;
+    margin:50px auto;
+
+}
+.ganzi{
+    position:absolute;
+    height:271px;
+    width:184px;
+    background:url(../img/bracket.png);
+    background-size:100%;
+    bottom:0;
+    left:calc(50% - 92px);
+}
+.ganzi .title{
+    position:absolute;
+    top:-28px;
+    left:15px;
+    height:70px;
+    width:160px;
+    background:url(../img/title2.png);
+    background-size:100%;
+    z-index:12;
+}
+.wheel{
+    position:absolute;
+    height:400px;
+    width:400px;
+    top:31px;
+    left:52px;
+    background:url('../img/wheel.png');
+    background-size:100%;
+    animation: rotate 7s linear infinite;
+    transform-origin:202px center;
+    border-radius:50%;
+}
+.wheel img{
+    position:absolute;
+    height:120px;
+    width:80px;
+    animation:rotate 7s linear infinite reverse; 
+    transform-origin:center top;
+}
+.wheel img:nth-of-type(1){
+    top:25px;
+    left:92px;
+}
+.wheel img:nth-of-type(2){
+    top:30px;
+    left:233px;
+}
+.wheel img:nth-of-type(3){
+    top:125px;
+    left:329px;
+}
+.wheel img:nth-of-type(4){
+    top:270px;
+    left:334px;
+}
+.wheel img:nth-of-type(5){
+    top:370px;
+    left:241px;
+}
+.wheel img:nth-of-type(6){
+    top:372px;
+    left:92px;
+}
+.wheel img:nth-of-type(7){
+    top:273px;
+    left:-7px;
+}
+.wheel img:nth-of-type(8){
+    top:130px;
+    left:-8px;
+}
+@keyframes rotate{
+    form{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
